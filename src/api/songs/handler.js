@@ -1,9 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable max-len */
-/* eslint-disable linebreak-style */
-/* eslint-disable require-jsdoc */
-// eslint-disable-next-line require-jsdoc
-// eslint-disable-next-line linebreak-style
 const ClientError = require('../../exceptions/ClientError');
 
 class SongsHandler {
