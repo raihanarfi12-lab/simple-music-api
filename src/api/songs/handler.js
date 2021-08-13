@@ -48,17 +48,10 @@ class SongsHandler {
   }
   async getSongsHandler() {
     const songs = await this._service.getSongs();
-    const songResponse = (array) =>{
-      const getSongItems = array.map((b) => {
-        const {id, title, performer} = b;
-        return {id, title, performer};
-      });
-      return getSongItems;
-    };
     return {
       status: 'success',
       data: {
-        songs: songResponse(songs),
+        songs,
       },
     };
   };
